@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<title>Elevator Problem</title>
+
+		<meta name="author" content="Jahdai Cintron">
+		<meta name="description" content="Elevator Problem">
+		<meta name="keywords" content="">
+
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body>
+		<div id="left-panel">
+			<div id="display">
+				<div class="rotatable" id="building">
+					<div class="back"></div>
+				</div>
+
+				<div id="buttons">
+					<button type="button" data-floor="10" onclick="controller.callElevator(10);">10</button>
+					<button type="button" data-floor="9" onclick="controller.callElevator(9);">9</button>
+					<button type="button" data-floor="8" onclick="controller.callElevator(8);">8</button>
+					<button type="button" data-floor="7" onclick="controller.callElevator(7);">7</button>
+					<button type="button" data-floor="6" onclick="controller.callElevator(6);">6</button>
+					<button type="button" data-floor="5" onclick="controller.callElevator(5);">5</button>
+					<button type="button" data-floor="4" onclick="controller.callElevator(4);">4</button>
+					<button type="button" data-floor="3" onclick="controller.callElevator(3);">3</button>
+					<button type="button" data-floor="2" onclick="controller.callElevator(2);">2</button>
+					<button type="button" data-floor="1" onclick="controller.callElevator(1);">1</button>
+				</div>
+
+				<div id="switch">
+					<input type="range" min="0" max="1" value="0" oninput="changeRotation()" list="switchmark">
+					<datalist id="switchmark">
+						<option value="0">on</option>
+						<option value="1">off</option>
+					</datalist>
+				</div>
+
+				<div id="slider">
+					<input type="range" min="-180" max="180" oninput="changeRotation()" list="tickmarks">
+					<datalist id="tickmarks">
+						<option value="-180">
+						<option value="-90">
+						<option value="0">
+						<option value="90">
+						<option value="180">
+					</datalist>
+				</div>
+			</div>
+		</div>
+
+		<div id="right-panel">
+			<h1>Elevator Problem</h1>
+
+			<div id="store"></div>
+		</div>
+
+		<script src="elevator.js"></script>
+		<script src="elevator-controller.js"></script>
+		<script src="main.js"></script>
+	</body>
+
+</html>
