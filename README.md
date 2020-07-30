@@ -1,3 +1,4 @@
+![Elevator Symbol](https://upload.wikimedia.org/wikipedia/commons/c/c9/Elevator-clipart.svg)
 # Elevator Problem
 This is a coding puzzle often used when hiring a developer to test their ability to problem solve and write algorithms. This constraints also test their fundamental ability to write good, modern JavaScript without using external libraries such as jQuery. Lastly by requiring a UI that shows the elevators updating in real-time, their ability to use HTML and CSS to build a functional UI is tested.
 
